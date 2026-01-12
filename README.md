@@ -10,7 +10,8 @@ This project collects progressive experiments on quadcopter modeling and PID imi
 - scikit-learn
 
 ## Structure
-- `C45/` linear Z-axis PID simulation, GRU training, and GRU controller test.
+- [C45](C45/) baseline linear Z-axis PID simulation, GRU training, and GRU controller test.
+- [C46](C46/) narrowed to a single multi-step reference, adds a test-only script that loads a trained GRU and compares it against the fixed PID without retraining.
 - `Cxx/` other milestones (to be added).
 
 ## Notes
