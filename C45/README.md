@@ -32,3 +32,44 @@ Plots are saved with the `C45_` prefix, for example:
 
 The GRU checkpoint is saved to `models/` with:
 - `C45_linear_z_pid_trainedGRUmodel_SL_<sequence_length>.pt`
+
+## Terminal output
+Paste the run log here:
+```
+Step 1: Linear Z-axis PID test
+Ts=0.001s, total=50.0s, m=2.168kg, g=9.80665, Kdz=0.0057
+PID: Kp=8.0, Ki=1.0, Kd=2.0
+Splits: train=0.70, val=0.15, test=0.15
+Dataset 1: RMS error = 0.0089 m
+Dataset 2: RMS error = 0.0463 m
+Dataset 3: RMS error = 0.1344 m
+
+Step 2: Training GRU on Z-axis PID data
+Epoch 01 | Train MSE 6.9878e-02 | Val MSE 2.4489e-02
+Epoch 02 | Train MSE 3.9639e-02 | Val MSE 2.0715e-02
+Epoch 03 | Train MSE 3.2581e-02 | Val MSE 2.0314e-02
+Epoch 04 | Train MSE 2.9830e-02 | Val MSE 2.0570e-02
+Epoch 05 | Train MSE 2.4986e-02 | Val MSE 2.0761e-02
+Epoch 06 | Train MSE 2.4101e-02 | Val MSE 2.0902e-02
+Epoch 07 | Train MSE 2.2466e-02 | Val MSE 2.2007e-02
+Epoch 08 | Train MSE 2.3592e-02 | Val MSE 2.0135e-02
+Epoch 09 | Train MSE 2.1754e-02 | Val MSE 2.1342e-02
+Epoch 10 | Train MSE 2.1880e-02 | Val MSE 2.0348e-02
+Epoch 11 | Train MSE 2.1594e-02 | Val MSE 2.3341e-02
+Epoch 12 | Train MSE 2.1302e-02 | Val MSE 2.3020e-02
+Epoch 13 | Train MSE 2.1230e-02 | Val MSE 2.1232e-02
+Epoch 14 | Train MSE 2.1583e-02 | Val MSE 2.9148e-02
+Epoch 15 | Train MSE 2.1436e-02 | Val MSE 2.1172e-02
+Epoch 16 | Train MSE 2.1116e-02 | Val MSE 2.0747e-02
+Epoch 17 | Train MSE 2.1663e-02 | Val MSE 2.0191e-02
+Epoch 18 | Train MSE 2.0801e-02 | Val MSE 2.1565e-02
+Epoch 19 | Train MSE 2.1232e-02 | Val MSE 2.2000e-02
+Epoch 20 | Train MSE 2.1046e-02 | Val MSE 2.2907e-02
+Saved GRU checkpoint to: c:\Users\ishaq\Documents\nn_quad_identfication\Python\nn_quad_codes\models\C45_linear_z_pid_trainedGRUmodel_SL_10.pt
+
+Step 3: Testing trained model vs fixed PID
+D1 RMS error | PID: 8.8897e-03 m | Model: 8.8536e-03 m
+D2 RMS error | PID: 4.6287e-02 m | Model: 4.5290e-02 m
+D3 RMS error | PID: 1.3432e-01 m | Model: 1.3406e-01 m
+
+```
