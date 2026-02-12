@@ -1,4 +1,4 @@
-# Quadcopter Modeling, Identification, and Control with Neural Networks
+# Quadcopter Modeling, Identification, and Control with Recurrent Neural Networks
 
 This project collects progressive experiments on quadcopter modeling and PID imitation using recurrent neural networks. Each `Cxx` folder is a milestone that shows how the approach evolved.
 
