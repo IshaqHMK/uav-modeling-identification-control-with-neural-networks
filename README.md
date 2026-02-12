@@ -1,6 +1,6 @@
 # Quadcopter Modeling, Identification, and Control with Neural Networks
 
-This project collects progressive experiments on quadcopter modeling and PID imitation using neural networks. Each `Cxx` folder is a milestone that shows how the approach evolved.
+This project collects progressive experiments on quadcopter modeling and PID imitation using recurrent neural networks. Each `Cxx` folder is a milestone that shows how the approach evolved.
 
 ## Requirements
 - Python 3.10+ (tested with 3.13)
