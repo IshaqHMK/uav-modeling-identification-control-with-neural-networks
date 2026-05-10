@@ -10,7 +10,7 @@ This project collects progressive experiments on quadcopter modeling and PID imi
 - scikit-learn
 
 ## Structure (C1 to C59)
-- [C1](C1/) first experimental direct-model MLP on flight logs.
+- [C1](python/C1/) first experimental direct-model MLP on flight logs.
 - [C2](C2/) replay/validation of the C1 direct model on the same log.
 - [C3](C3/) early PID-on-learned-plant closed-loop test (MLP plant from C1).
 - [C4](C4/) direct model extended to angles + rates (deg / deg/s).
