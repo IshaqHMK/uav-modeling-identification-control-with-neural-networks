@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/aus_hpc_complete_setup_and_restart_obsidian.md",
+                "file": "README_revised.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "aus_hpc_complete_setup_and_restart_obsidian"
+              "title": "README_revised"
             }
           }
         ]
@@ -185,11 +185,11 @@
   },
   "active": "f742e8ae2c20b9f5",
   "lastOpenFiles": [
+    "notes/aus_hpc_complete_setup_and_restart_obsidian.md",
     "notes/matlab/test.m",
     "notes/matlab/untitled.m",
     "notes/matlab",
     "notes/New folder",
-    "notes/aus_hpc_vscode_slurm_setup_notes.md",
-    "notes/aus_hpc_complete_setup_and_restart_obsidian.md"
+    "notes/aus_hpc_vscode_slurm_setup_notes.md"
   ]
 }
