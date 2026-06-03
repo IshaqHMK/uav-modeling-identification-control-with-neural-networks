@@ -1,4 +1,4 @@
-# Quadcopter Modeling, Identification, and Control with Neural Networks
+# UAV Modeling, Identification, and Neural Controller Imitation
 
 This repository contains neural-network-based modeling, identification, and controller-imitation experiments for quadcopters. The sequence starts with MLP-based plant identification and progresses through RNN, LSTM, and GRU models for imitating PID controllers in nonlinear quadrotor simulations.
 
