@@ -1,10 +1,10 @@
 # UAV Modeling, Identification, and Neural Controller Imitation
 
-This repository contains neural network based modeling, system identification, and controller imitation experiments for quadcopters. The work starts with MLP based plant identification and progresses to RNN, LSTM, and GRU models for imitating PID controllers in nonlinear quadrotor simulations.
+This repository contains neural-network-based modeling, system identification, and controller-imitation experiments for quadcopters. The work begins with MLP-based plant identification and progresses to RNN, LSTM, and GRU models for imitating PID controllers in nonlinear quadrotor simulations.
 
-## Latest update (September 2025 to April 2026)
+## Project Scope (September 2025 to April 2026)
 
-The final stage studied GRU based imitation of PID control loops for altitude, roll, pitch, and yaw in a nonlinear quadrotor simulation with attitude coupling and vertical wind disturbance. This direction was discontinued because the GRU controllers were not a practical replacement for PID. They learned PID like behavior under selected simulation conditions, but they did not provide the reliability, response speed, generalization, or stability guarantees required for real UAV control.
+The final stage studied GRU-based imitation of PID control loops for altitude, roll, pitch, and yaw in a nonlinear quadrotor simulation with attitude coupling and vertical wind disturbance. This direction was discontinued because the GRU controllers were not a practical replacement for PID. They learned PID-like behavior under selected simulation conditions, but they did not provide the reliability, response speed, generalization, or stability guarantees required for real UAV control.
 
 ## Final Method Summary
 
@@ -165,12 +165,12 @@ Additional figures are in [docs/figures](docs/figures/). The editable PowerPoint
 
 ## RNN and GRU Control Limitations
 
-The GRU models learned PID like input output behavior during supervised training. However, imitating PID commands did not preserve the stability and robustness properties of the original PID controller.
+The GRU models learned PID-like input-output behavior during supervised training. However, imitating PID commands did not preserve the stability and robustness properties of the original PID controller.
 
-* No closed loop stability proof was established for the learned GRU controllers.
+* No closed-loop stability proof was established for the learned GRU controllers.
 * Prediction errors can accumulate in closed loop, especially when altitude, roll, pitch, and yaw are controlled by learned models at the same time.
 * Performance depends on the training conditions, including reference signals, disturbances, gains, sampling time, and operating region.
-* Flight ready validation was not established. Hardware timing, sensor noise, actuator saturation, and safety tests were not completed.
+* Flight-ready validation was not established. Hardware timing, sensor noise, actuator saturation, and safety tests were not completed.
 
 For this reason, direct PID replacement was not continued. More suitable uses of neural networks are system identification, disturbance estimation, adaptive gain tuning, or residual compensation around a stabilizing baseline controller.
 
@@ -291,15 +291,15 @@ Some later plotting workflows used MATLAB for `.mat` result files.
 
 ## Reuse Notes
 
-This is research code. Many scripts are self contained iterations, and some later scripts require generated files that are not published.
+This is research code. Many scripts are self-contained iterations, and some later scripts require generated files that are not published.
 
 Suggested reading path:
 
 1. Read the final method sections above.
 2. Inspect `C62`, `C64`, `C65`, `C66`, `C67`, and `C68` for the final GRU controller experiments.
 3. Work backward through `C54` to `C61` to understand the nonlinear simulation and controller imitation pipeline.
-4. Use `C1` to `C25` as historical context for the modeling and recurrent network trials.
+4. Use `C1` to `C25` as historical context for the modeling and recurrent-network trials.
 
 Trained checkpoints, generated datasets, local environments, and bulk run outputs are not included.
 
-For collaboration or questions, contact me at [ishaq.hmk@gmail.com](mailto:ishaq.hmk@gmail.com).
+For collaboration or questions, contact [ishaq.hmk@gmail.com](mailto:ishaq.hmk@gmail.com).
