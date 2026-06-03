@@ -1,22 +1,18 @@
 # UAV Modeling, Identification, and Neural Controller Imitation
 
-This repository contains neural-network-based modeling, identification, and controller-imitation experiments for quadcopters. The sequence starts with MLP-based plant identification and progresses through RNN, LSTM, and GRU models for imitating PID controllers in nonlinear quadrotor simulations.
+This repository contains neural network based modeling, system identification, and controller imitation experiments for quadcopters. The work starts with MLP based plant identification and progresses to RNN, LSTM, and GRU models for imitating PID controllers in nonlinear quadrotor simulations.
 
-The code is published for reference and reuse. For collaboration or questions about continuing this work, open an issue or contact [IshaqHMK](https://github.com/IshaqHMK).
+The code is published for reference and reuse. For collaboration or questions about this work, feel free to contact me at [ishaq.hmk@gmail.com](mailto:ishaq.hmk@gmail.com).
 
-The unpublished paper draft, TeX source, trained checkpoints, large generated datasets, local environments, and bulk run outputs are not included.
+Trained checkpoints, generated datasets, local environments, and bulk run outputs are not included.
 
-## Where This Work Stopped
+## Latest update (September 2025 to April 2026)
 
-The organized code history reaches `C68`. The final stage studied GRU imitation of PID loops for altitude, roll, pitch, and yaw in a nonlinear quadrotor simulation with attitude coupling and vertical wind disturbance.
-
-This direction was stopped because the GRU controllers were not a practical replacement for PID. They learned PID-like behavior under selected simulation conditions, but did not provide the reliability, speed, generalization, or stability guarantees needed for real UAV control.
-
-This work should be treated as a simulation-based controller-imitation study, not as a deployable UAV controller.
+The final stage studied GRU based imitation of PID control loops for altitude, roll, pitch, and yaw in a nonlinear quadrotor simulation with attitude coupling and vertical wind disturbance. This direction was discontinued because the GRU controllers were not a practical replacement for PID. They learned PID like behavior under selected simulation conditions, but they did not provide the reliability, response speed, generalization, or stability guarantees required for real UAV control.
 
 ## Final Method Summary
 
-The final experiments used a simplified nonlinear quadrotor model with altitude coupled to roll and pitch through the vertical projection of thrust. The state and control vectors were:
+The final experiments used a nonlinear quadrotor model with altitude coupled to roll and pitch through the vertical projection of thrust. The state and control vectors were:
 
 $$
 x(t)=
