@@ -1,0 +1,37 @@
+# Local/editor state
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Large generated artifacts
+models/
+run_outputs/
+mat_results/
+c55_report/
+c55_report_test/
+c62_test_figures_matlab/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.h5
+*.pkl
+*.joblib
+*.npy
+*.npz
+*.mat
+
+# Private drafts and temporary folders
+Conf_TeX/
+
+# Logs and generated reports
+*.log
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
