@@ -81,7 +81,7 @@ $$
 \qquad i\in\{\phi,\theta,\psi\}
 $$
 
-## GRU Controller Form
+## GRU Controller
 
 The GRU models were trained as sequence-to-one regressors. At each sample, the input for channel `j` was:
 
