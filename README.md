@@ -10,6 +10,12 @@ The final stage studied GRU-based imitation of PID control loops for altitude, r
 
 The final experiments used a nonlinear quadrotor model with altitude coupled to roll and pitch through the vertical projection of thrust. The state and control vectors were:
 
+<p align="center">
+  <img src="docs/figures/drone_schematic.png" width="760">
+  <br>
+  <em>Quadrotor body frame, global frame, rotor thrusts, and body torques.</em>
+</p>
+
 $$
 x(t)=
 \begin{bmatrix}
