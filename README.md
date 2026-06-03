@@ -2,10 +2,6 @@
 
 This repository contains neural network based modeling, system identification, and controller imitation experiments for quadcopters. The work starts with MLP based plant identification and progresses to RNN, LSTM, and GRU models for imitating PID controllers in nonlinear quadrotor simulations.
 
-The code is published for reference and reuse. For collaboration or questions about this work, feel free to contact me at [ishaq.hmk@gmail.com](mailto:ishaq.hmk@gmail.com).
-
-Trained checkpoints, generated datasets, local environments, and bulk run outputs are not included.
-
 ## Latest update (September 2025 to April 2026)
 
 The final stage studied GRU based imitation of PID control loops for altitude, roll, pitch, and yaw in a nonlinear quadrotor simulation with attitude coupling and vertical wind disturbance. This direction was discontinued because the GRU controllers were not a practical replacement for PID. They learned PID like behavior under selected simulation conditions, but they did not provide the reliability, response speed, generalization, or stability guarantees required for real UAV control.
@@ -293,11 +289,17 @@ scipy
 
 Some later plotting workflows used MATLAB for `.mat` result files.
 
-## Notes For Reuse
+## Reuse Notes
 
-This is research code. Many scripts are self-contained iterations, and some later scripts expect generated files that were too large to publish. A useful reading path is:
+This is research code. Many scripts are self contained iterations, and some later scripts require generated files that are not published.
+
+Suggested reading path:
 
 1. Read the final method sections above.
 2. Inspect `C62`, `C64`, `C65`, `C66`, `C67`, and `C68` for the final GRU controller experiments.
-3. Work backward through `C54` to `C61` to understand how the nonlinear simulation and controller imitation pipeline developed.
-4. Use the early `C1` to `C25` folders as historical context for the modeling and recurrent-network trials.
+3. Work backward through `C54` to `C61` to understand the nonlinear simulation and controller imitation pipeline.
+4. Use `C1` to `C25` as historical context for the modeling and recurrent network trials.
+
+Trained checkpoints, generated datasets, local environments, and bulk run outputs are not included.
+
+For collaboration or questions, contact me at [ishaq.hmk@gmail.com](mailto:ishaq.hmk@gmail.com).
