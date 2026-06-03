@@ -167,18 +167,16 @@ The figures below come from the final-stage experiments.
 
 Additional figures are in [docs/figures](docs/figures/). The editable PowerPoint source for block diagrams is in [docs/figure_sources](docs/figure_sources/).
 
-## RNN/GRU Control Limitations
+## RNN and GRU Control Limitations
 
-The GRUs learned PID-like input-output behavior in supervised training. The limitation was closed-loop control: imitating PID commands did not provide the same engineering guarantees as the original PID controller.
+The GRU models learned PID like input output behavior during supervised training. However, imitating PID commands did not preserve the stability and robustness properties of the original PID controller.
 
-- No closed-loop stability proof was established for the learned GRU controllers.
-- Small prediction errors can accumulate in closed loop, especially when all four channels are replaced at the same time.
-- The learned controller is distribution-dependent; performance is tied to the reference signals, disturbance levels, gains, sampling time, and operating region used during training.
-- GRU inference and sequence handling add runtime overhead compared with simple PID arithmetic, which matters for embedded UAV control loops.
-- Training a controller to imitate PID does not automatically improve robustness, actuator safety, or stability margins.
-- Simulation success does not imply flight readiness without hardware timing tests, sensor noise tests, actuator saturation handling, and formal safety analysis.
+* No closed loop stability proof was established for the learned GRU controllers.
+* Prediction errors can accumulate in closed loop, especially when altitude, roll, pitch, and yaw are controlled by learned models at the same time.
+* Performance depends on the training conditions, including reference signals, disturbances, gains, sampling time, and operating region.
+* Flight ready validation was not established. Hardware timing, sensor noise, actuator saturation, and safety tests were not completed.
 
-For this reason, the direct PID-replacement path was not continued. More suitable uses of neural networks may be model identification, disturbance estimation, adaptive gain tuning, or residual compensation around a conventional stabilizing controller.
+For this reason, direct PID replacement was not continued. More suitable uses of neural networks are system identification, disturbance estimation, adaptive gain tuning, or residual compensation around a stabilizing baseline controller.
 
 ## Repository Structure
 
