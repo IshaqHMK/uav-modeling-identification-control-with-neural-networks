@@ -11,7 +11,7 @@ This version extends C54 by adding **yaw control** and training on **two APRBS s
 ## What changed from C54
 - Added yaw PID and yaw reference.
 - Roll/pitch/yaw references use **3 degrees amplitude** (converted to radians).
-- Training uses two APRBS seeds (`APRBS_SEEDS = [21, 22]`) to create 6 datasets (2 seeds × 3 wind levels).
+- Training uses two APRBS seeds (`APRBS_SEEDS = [21, 22]`) to create 6 datasets (2 seeds x 3 wind levels).
 
 ## References
 Roll and yaw use sine references; pitch uses a cosine ramp:
