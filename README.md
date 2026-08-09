@@ -294,7 +294,7 @@ scipy
 ```
 
 
-[aws-hpc-quickstart](https://github.com/IshaqHMK/aws-hpc-quickstart): Guide for accessing AUS HPC from Windows using AWS Client VPN, AUS SSO, SSH, Amazon DCV, WinSCP, and Slurm.
+Follow [aws-hpc-quickstart](https://github.com/IshaqHMK/aws-hpc-quickstart) guide for accessing AUS HPC from Windows using AWS Client VPN, AUS SSO, SSH, Amazon DCV, WinSCP, and Slurm.
 
 
 ## Reuse Notes
