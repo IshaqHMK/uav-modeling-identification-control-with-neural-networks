@@ -300,14 +300,4 @@ scipy
 ## Reuse Notes
 
 This is research code. Many scripts are self-contained iterations, and some later scripts require generated files that are not published.
-
-Suggested reading path:
-
-1. Read the final method sections above.
-2. Inspect `C62`, `C64`, `C65`, `C66`, `C67`, and `C68` for the final GRU controller experiments.
-3. Work backward through `C54` to `C61` to understand the nonlinear simulation and controller imitation pipeline.
-4. Use `C1` to `C25` as historical context for the modeling and recurrent-network trials.
-
-Trained checkpoints, generated datasets, local environments, and bulk run outputs are not included.
-
-For collaboration or questions, contact [ishaq.hmk@gmail.com](mailto:ishaq.hmk@gmail.com).
+ 
