@@ -293,7 +293,9 @@ scikit-learn
 scipy
 ```
 
-Some later plotting workflows used MATLAB for `.mat` result files.
+
+[aws-hpc-quickstart](https://github.com/IshaqHMK/aws-hpc-quickstart): Guide for accessing AUS HPC from Windows using AWS Client VPN, AUS SSO, SSH, Amazon DCV, WinSCP, and Slurm.
+
 
 ## Reuse Notes
 
